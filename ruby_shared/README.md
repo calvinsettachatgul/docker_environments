@@ -22,7 +22,7 @@ docker exec -it < my_container > bash
 ```
 
 ```bash
-bundle install # installs the below dependencies
+bundle install # installs the below dependencies run in the Dockerfile 
 ```
 * rspec
 * byebug

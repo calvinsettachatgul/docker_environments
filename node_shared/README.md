@@ -2,16 +2,21 @@
 
 # https://docs.docker.com/engine/reference/builder/#volume
 
+```bash
 docker build . -t new_image
 
 docker run -it -v $(pwd):/myvol new_image bash
+```
 
 # run the image exposing port 5000
+```bash
 docker run -it -v $(pwd):/myvol -p 5000:5000 new_image bash
 
-docker run -it  new_image
-
+docker run -it  new_image bash
+```
 # connect to docker container
-docker exec -it <mycontainer> bash
+```bash
+docker exec -it < my_container_name > bash
+```
 
 
