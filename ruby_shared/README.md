@@ -6,7 +6,7 @@ docker build . -t new_image
 
 docker run -it -p 4567:4567 -v $(pwd):/myvol new_image bash
 
-# run the image exposing port 5000
+# run the image exposing port 4567
 
 docker run -it -p 4567:4567 new_image bash
 
@@ -16,10 +16,9 @@ docker run -it  new_image
 docker exec -it <mycontainer> bash
 
 
-bundle install
-# installs 
-# rspec
-# byebug
-# pry
-# sinatra
+bundle install # installs the below dependencies
+* rspec
+* byebug
+* pry
+* sinatra
 

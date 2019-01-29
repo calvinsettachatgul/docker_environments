@@ -4,7 +4,7 @@
 
 docker build . -t new_image
 
-docker run -it -v $(pwd):/myvol new_image
+docker run -it -v $(pwd):/myvol new_image bash
 
 # run the image exposing port 5000
 docker run -it -p 5000:5000 -v $(pwd):/myvol new_image bash
@@ -12,5 +12,6 @@ docker run -it -p 5000:5000 -v $(pwd):/myvol new_image bash
 docker run -it -v $(pwd):/myvol new_image bash
 
 # connect to docker container
+
 docker exec -it <mycontainer> bash
 
