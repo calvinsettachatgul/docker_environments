@@ -12,8 +12,8 @@ docker run -it -p 4567:4567 new_image bash
 
 docker run -it  new_image
 
-# connect to docker container
-docker exec -it <mycontainer> bash
+# connect to docker container with bash
+docker exec -it < mycontainer > bash
 
 
 bundle install # installs the below dependencies
