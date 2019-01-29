@@ -8,6 +8,7 @@ docker run -it -v $(pwd):/myvol new_image bash
 
 # run the image exposing port 5000
 docker run -it -v $(pwd):/myvol -p 5000:5000 new_image bash
+
 docker run -it  new_image
 
 # connect to docker container
